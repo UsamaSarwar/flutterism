@@ -2,7 +2,7 @@
 ![Flutterism](https://i.imgur.com/lf33BxZ.png)
 # #Flutterism
 [![Youtube](https://img.shields.io/badge/Flutterism-Youtube-FF0000?logo=Youtube&logoColor=ffffff)](https://www.youtube.com/UsamaSarwar?sub_confirmation=1) [![Facebook](https://img.shields.io/badge/Flutterism-Facebook-1877F2?logo=Facebook&logoColor=ffffff)](https://www.facebook.com/Flutterism/) [![Instagram](https://img.shields.io/badge/Flutterism-Instagram-DD2A7B?logo=Instagram&logoColor=ffffff)](https://www.instagram.com/Flutterism/)
-...
+`#Flutterism`
 Flutterism is a series of Flutter Tutorials for Flutter Developers. If you are new to Flutter then these tutorials can help you learn Flutter very quickly. Video Tutorials are also available as playlist of #Flutterism on youtube. 
 Let's Flutter!
 # About Flutter Trainer 
