@@ -28,3 +28,24 @@ You are pass...
 Percentage: 90.0%
 ```
 Percentage Formula: Gained Marks / Total Marks x 100
+
+# Assignment 3
+Write a code that will calculate your present age in Years, Months and Days.
+
+Sample Output
+```bash
+Date of Birth
+22
+Month of Birth
+10
+Year of Birth
+1995
+
+Age in Years: 26
+Age in Monnths: 1
+Age in Days: 6
+```
+Note: You need to use the followings.
+1. Class `Age`
+2. Function `calculateAge`
+3. Buit-in Date and Time Picker in Dart
