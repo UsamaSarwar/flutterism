@@ -42,10 +42,22 @@ Year of Birth
 1995
 
 Age in Years: 26
-Age in Monnths: 1
+Age in Months: 1
 Age in Days: 6
 ```
 Note: You need to use the followings.
 1. Class `Age`
 2. Function `calculateAge`
 3. Buit-in Date and Time Picker in Dart
+
+# Assignment 4
+Write a program that will use inheritence. You need to make a parent class `Animal`. Then make their two child classes, i.e Mammals and Raptiles. Extend childs to parent.
+
+Sample Output:
+```bash
+Specie Name: Lizard
+Type: Reptile
+
+Specie Name: Cat
+Type: Mammal
+```

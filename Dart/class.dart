@@ -1,6 +1,6 @@
 /// Class Example
 class Student {
-  // Custom Datatype
+  // Members
   String studentName;
   int studentRollNumber;
   int studentClass;
