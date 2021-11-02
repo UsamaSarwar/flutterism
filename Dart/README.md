@@ -61,3 +61,20 @@ Type: Reptile
 Specie Name: Cat
 Type: Mammal
 ```
+
+# Assignment 5
+Take a List of 10 integers then perform the following functions:
+1. Accending Sorting
+2. Find Sum of all intergers
+3. Find the smallest integers
+4. Find the largest integers
+Sample Output:
+
+```bash
+Enter 10 integers separated with spaces: 11 5 6 4 5 12 15 54 12 10
+
+Accending Sorting: 4, 5, 5, 6, 10, 11, 12, 12, 15, 54
+Find Sum of all intergers: 134
+Find the smallest integers: 4
+Find the largest integers: 54
+```

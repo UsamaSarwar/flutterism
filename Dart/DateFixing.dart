@@ -7,17 +7,22 @@ class GetDateTime {
 
   int get getCurrentDate => this.date;
   int get getCurrentMonth => this.month;
+
   int get getCurrentYear => this.year;
 }
 
-int calculatedate(int datebirth, int currentDate) {
-  int ageInDays = currentDate - datebirth;
-  return ageInDays;
-  /// 22 OCT - 01 NOV
+int calculatedate(int datebirth) {
+  DateTime dateTime =
+      DateTime(0, 0, DateTime.now().day).subtract(Duration(days: datebirth));
+  return dateTime.day;
 }
 
 int calculatemonth(int monthbirth, int Currentmonth) {
-  int ageInMonths = Currentmonth - monthbirth;
+  int ageInMonths;
+  if (monthbirth >= Currentmonth)
+    ageInMonths = monthbirth - Currentmonth;
+  else
+    ageInMonths = Currentmonth - monthbirth;
   return ageInMonths;
 }
 
@@ -34,13 +39,14 @@ main(List<String> args) {
   int? birthmonth = int.parse(stdin.readLineSync()!);
   print("Enter your Year of birth:");
   int? birthyear = int.parse(stdin.readLineSync()!);
-  print('Age in days: ' +
-      calculatedate(birthDate, _getDateTime.getCurrentDate).toString() +
-      ' days');
+  print('Age in days: ' + calculatedate(birthDate).toString() + ' days');
   print('Age in months: ' +
       calculatemonth(birthmonth, _getDateTime.getCurrentMonth).toString() +
       ' months');
-  print('Age in years: ' +
-      calculateyear(birthyear, _getDateTime.getCurrentYear).toString() +
-      ' years');
+  if (calculateyear(birthyear, _getDateTime.getCurrentYear) < 0)
+    print('Invalid Year of Birth');
+  else
+    print('Age in years: ' +
+        calculateyear(birthyear, _getDateTime.getCurrentYear).toString() +
+        ' years');
 }
