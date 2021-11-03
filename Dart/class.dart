@@ -4,6 +4,7 @@ class Student {
   String studentName;
   int studentRollNumber;
   int studentClass;
+  int studentFee=0;
 
   // Name Constructor
   Student(
