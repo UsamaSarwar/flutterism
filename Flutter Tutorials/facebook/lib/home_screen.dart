@@ -45,33 +45,14 @@ class HomeScreen extends StatelessWidget {
                   ))
             ],
             bottom: TabBar(
-              tabs: <Widget>[
-                Tab(
-                  icon: Icon(
-                    Icons.home,
-                    color: Colors.blue[700],
-                  ),
-                ),
-                Tab(
-                    icon: Icon(
-                  Icons.groups,
-                  color: Colors.blue[700],
-                )),
-                Tab(
-                    icon: Icon(
-                  Icons.live_tv,
-                  color: Colors.blue[700],
-                )),
-                Tab(
-                    icon: Icon(
-                  Icons.flag,
-                  color: Colors.blue[700],
-                )),
-                Tab(
-                    icon: Icon(
-                  Icons.menu,
-                  color: Colors.blue[700],
-                )),
+              unselectedLabelColor: Colors.grey[700],
+              labelColor: Colors.blue[700],
+              tabs: const <Widget>[
+                Tab(icon: Icon(Icons.home)),
+                Tab(icon: Icon(Icons.groups)),
+                Tab(icon: Icon(Icons.live_tv)),
+                Tab(icon: Icon(Icons.flag)),
+                Tab(icon: Icon(Icons.menu)),
               ],
             ),
           ),
