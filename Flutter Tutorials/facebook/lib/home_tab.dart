@@ -56,6 +56,7 @@ class HomeTab extends StatelessWidget {
                       Icons.videocam,
                       color: Colors.red,
                     ),
+                    SizedBox(width: 4),
                     Text('Live')
                   ],
                 ),
@@ -70,6 +71,7 @@ class HomeTab extends StatelessWidget {
                       Icons.photo,
                       color: Colors.green,
                     ),
+                    SizedBox(width: 4),
                     Text('Photo')
                   ],
                 ),
@@ -84,6 +86,7 @@ class HomeTab extends StatelessWidget {
                       Icons.video_call,
                       color: Colors.purple,
                     ),
+                    SizedBox(width: 4),
                     Text('Room')
                   ],
                 )
@@ -95,6 +98,9 @@ class HomeTab extends StatelessWidget {
             thickness: 10,
             color: Colors.grey.shade300,
           ),
+          facebookPost(),
+          facebookPost(),
+          facebookPost(),
           facebookPost(),
         ],
       ),
@@ -161,9 +167,81 @@ Column facebookPost() {
         child: Text('Hi Guys! How are you doing?'),
       ),
       Image.asset(
-                  'assets/usama.jpg',
-                  fit: BoxFit.contain,
+        'assets/usama.jpg',
+        fit: BoxFit.contain,
+      ),
+      Padding(
+        padding: const EdgeInsets.symmetric(vertical: 10),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(left: 10),
+              child: Row(
+                children: const [
+                  Icon(
+                    Icons.thumb_up_alt_rounded,
+                    color: Colors.blue,
+                  ),
+                  SizedBox(width: 4),
+                  Icon(
+                    Icons.favorite_rounded,
+                    color: Colors.red,
+                  ),
+                  SizedBox(width: 4),
+                  Text('45')
+                ],
+              ),
+            ),
+            const Padding(
+              padding: EdgeInsets.only(right: 10),
+              child: Text('9 comments'),
+            ),
+          ],
+        ),
+      ),
+      const Divider(
+        height: 1.0,
+        color: Colors.grey,
+      ),
+      Padding(
+        padding: const EdgeInsets.all(10.0),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Row(
+              children: const [
+                Icon(
+                  Icons.thumb_up_alt_outlined,
+                  color: Colors.grey,
                 ),
+                SizedBox(width: 4),
+                Text('Like')
+              ],
+            ),
+            Row(
+              children: const [
+                Icon(
+                  Icons.comment,
+                  color: Colors.grey,
+                ),
+                SizedBox(width: 4),
+                Text('Comment')
+              ],
+            ),
+            Row(
+              children: const [
+                Icon(
+                  Icons.share,
+                  color: Colors.grey,
+                ),
+                SizedBox(width: 4),
+                Text('Share')
+              ],
+            )
+          ],
+        ),
+      ),
     ],
   );
 }
