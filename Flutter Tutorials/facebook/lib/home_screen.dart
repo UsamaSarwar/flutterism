@@ -1,4 +1,5 @@
 import 'package:facebook/home_tab.dart';
+import 'package:facebook/menu_tab.dart';
 import 'package:facebook/notification_tab.dart';
 import 'package:flutter/material.dart';
 import 'package:facebook/group_tab.dart';
@@ -62,12 +63,10 @@ class HomeScreen extends StatelessWidget {
               HomeTab(),
               GroupTab(),
               Center(
-                child: Text("Status is under Development"),
+                child: Text("Video is under Development"),
               ),
               NotificationTab(),
-              Center(
-                child: Text("Call is under Development"),
-              ),
+              MenuTab(),
             ],
           ),
         ),
