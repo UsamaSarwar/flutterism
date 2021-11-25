@@ -41,7 +41,3 @@ void main(List<String> args) {
     print('$key = $value');
   });
 }
-
-/// Assignment
-/// You need to print a message to the console
-/// "Hi, I'm Software Engineer and I love $Flutter"
