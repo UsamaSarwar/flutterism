@@ -21,14 +21,14 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Age Calculator',
       theme: ThemeData(
         primarySwatch: Colors.red,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Subscribers Booster'),
+          title: const Text('Age Calculator'),
         ),
         body: Center(
           child: Column(
@@ -36,24 +36,38 @@ class _MyAppState extends State<MyApp> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Obx(() => Text(
-                    _controller.subsribers.value.toString(),
+                    _controller.years.value.toString(),
                     style: const TextStyle(
                       fontSize: 50,
                       color: Colors.red,
                       fontWeight: FontWeight.bold,
                     ),
                   )),
-              const Text('Subscribers'),
+              const Text('Years'),
+              Padding(
+                padding: const EdgeInsets.all(25.0),
+                child: TextFormField(
+                  maxLength: 4,
+                  decoration: const InputDecoration(
+                      border: UnderlineInputBorder(),
+                      labelText: 'Enter your Year of Birth',
+                      hintText: '1995'),
+                  onChanged: (inputText) {
+                    _controller.years.value =
+                        DateTime.now().year - int.parse(inputText);
+                  },
+                ),
+              ),
             ],
           ),
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
-            _controller.subsribers.value = _controller.subsribers.value + 157;
+            _controller.years.value = _controller.years.value + 157;
             // ignore: avoid_print
-            print('Subscribers Count: ${_controller.subsribers.value}');
+            print('Subscribers Count: ${_controller.years.value}');
           },
-          child: const Icon(Icons.thumb_up_sharp),
+          child: const Icon(Icons.calculate),
         ),
       ),
     );
