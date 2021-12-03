@@ -6,8 +6,11 @@ class GetDateTime {
   int year = DateTime.now().year;
 
   int get getCurrentDate => this.date;
+  // Alternative way to get the current date
+  // int getCurrentDateAlternatively(){
+  //   return this.date;  
+  // }
   int get getCurrentMonth => this.month;
-
   int get getCurrentYear => this.year;
 }
 

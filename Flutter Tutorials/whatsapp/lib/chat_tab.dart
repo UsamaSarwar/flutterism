@@ -1,26 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:whatsapp/chat_screen.dart';
+import 'package:whatsapp/constants.dart';
 
 class ChatTab extends StatelessWidget {
   const ChatTab({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    List<String> users = [
-      'Usama Sarwar',
-      'Abdullah Naveed',
-      'Uzma Ali',
-      'Mehwish Hayat',
-      'Anreios',
-      'Usama Sarwar',
-      'Abdullah Naveed',
-      'Uzma Ali',
-      'Mehwish Hayat',
-      'Anreios',
-      'Usama Sarwar',
-      'Abdullah Naveed',
-      'Uzma Ali',
-      'Mehwish Hayat',
-      'Anreios',
-    ];
+    
     return SingleChildScrollView(
       child: Column(
         children: [
@@ -33,6 +20,7 @@ class ChatTab extends StatelessWidget {
               title: Text(users[i]),
               subtitle: const Text('Hi, How are you?'),
               trailing: const Text('10:21'),
+              onTap: ()=> Get.to(ChatScreen(users[i])),
             ),
         ],
       ),
