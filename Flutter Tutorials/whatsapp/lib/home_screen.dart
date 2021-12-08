@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:whatsapp/camera.dart';
 import 'package:whatsapp/chat_tab.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -42,9 +43,7 @@ class HomeScreen extends StatelessWidget {
           ),
           body: const TabBarView(
             children: <Widget>[
-              Center(
-                child: Text("Camera is under Development"),
-              ),
+              WhatsappCamera(),
               ChatTab(),
               Center(
                 child: Text("Status is under Development"),
