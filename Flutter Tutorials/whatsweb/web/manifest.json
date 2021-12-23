@@ -1,6 +1,6 @@
 {
-    "name": "flutterproject",
-    "short_name": "flutterproject",
+    "name": "whatsweb",
+    "short_name": "whatsweb",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
