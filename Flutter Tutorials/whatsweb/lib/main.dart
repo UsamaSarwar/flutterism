@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:whatsweb/home.dart';
+import 'package:whatsweb/column_widget.dart';
+import 'package:whatsweb/row_widget.dart';
 
 void main() => runApp(const WhatsWeb());
 
@@ -11,16 +12,17 @@ class WhatsWeb extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'WhatsWeb',
-      themeMode: ThemeMode.dark,
+      // themeMode: ThemeMode.system,
       theme: ThemeData(
         primarySwatch: Colors.purple,
         primaryColor: Colors.purple,
       ),
       darkTheme: ThemeData(
-        primarySwatch: Colors.grey,
-        primaryColor: Colors.purple,
+        primarySwatch: Colors.deepPurple,
+        primaryColor: Colors.deepPurple,
       ),
-      home: const Home(),
+      // home: const RowWidget(),
+      home: const ColumnWidget(),
     );
   }
 }
