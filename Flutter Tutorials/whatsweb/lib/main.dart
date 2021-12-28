@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:whatsweb/column_widget.dart';
-import 'package:whatsweb/row_widget.dart';
+import 'package:whatsweb/profile.dart';
+// import 'package:whatsweb/column_row.dart';
+// import 'package:whatsweb/column_widget.dart';
+// import 'package:whatsweb/row_widget.dart';
 
 void main() => runApp(const WhatsWeb());
 
@@ -22,7 +24,7 @@ class WhatsWeb extends StatelessWidget {
         primaryColor: Colors.deepPurple,
       ),
       // home: const RowWidget(),
-      home: const ColumnWidget(),
+      home: const Profile(),
     );
   }
 }
