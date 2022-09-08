@@ -1,0 +1,33 @@
+import 'package:flutter/material.dart';
+
+class App extends StatefulWidget {
+  const App({Key? key}) : super(key: key);
+
+  @override
+  State<App> createState() => _AppState();
+}
+
+class _AppState extends State<App> {
+  int count = 0;
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Counter'),
+        ),
+        body: Center(
+          child: Text(count.toString()),
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            count++;
+            setState(() {});
+          },
+          child: const Icon(Icons.add),
+        ),
+      ),
+    );
+  }
+}
