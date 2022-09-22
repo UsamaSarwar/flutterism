@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:responsive_app/responsive_wrap.dart';
+import 'package:responsive_app/sized.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -11,6 +12,12 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Responsive'),
         actions: [
+          IconButton(
+            icon: const Icon(Icons.wrap_text),
+            onPressed: () {
+              Get.to(const Sized());
+            },
+          ),
           IconButton(
             icon: const Icon(Icons.send),
             onPressed: () {
